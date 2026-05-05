@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Automation Agency | Streamline Your Workflows</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <canvas id="bg-canvas"></canvas>
+
+    <nav>
+        <div class="logo">Core <span>AI</span></div>
+        <div class="nav-links">
+            <a href="#services">Services</a>
+            <a href="#framework">Framework</a>
+            <a href="#calculator">ROI Calculator</a>
+        </div>
+        <a href="#contact" class="btn btn-outline">Contact Us</a>
+    </nav>
+
+    <section class="hero" id="hero">
+        <div class="hero-content fade-in">
+            <h1>Automate the Mundane.<br><span>Amplify the Extraordinary.</span></h1>
+            <p>Reduce administrative overhead and streamline workflows with elite AI-driven solutions.</p>
+            <div class="cta-group">
+                <a href="#contact" class="btn btn-primary">Book a Strategy Call</a>
+                <a href="#framework" class="btn btn-secondary">See How It Works</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="framework" id="framework">
+        <h2 class="section-title fade-in">The Architecture of Efficiency</h2>
+        <div class="zigzag-flow">
+            <div class="flow-step fade-in">
+                <div class="step-icon"><i class="fas fa-search"></i></div>
+                <div class="step-content">
+                    <h3>1. Audit & Analysis</h3>
+                    <p>We deep-dive into your existing workflows to identify bottlenecks and high-ROI automation
+                        opportunities.</p>
+                </div>
+            </div>
+            <div class="flow-step reverse fade-in">
+                <div class="step-icon"><i class="fas fa-cogs"></i></div>
+                <div class="step-content">
+                    <h3>2. Custom Engineering</h3>
+                    <p>Our engineers design precise, logical AI architectures tailored to your specific operational
+                        needs.</p>
+                </div>
+            </div>
+            <div class="flow-step fade-in">
+                <div class="step-icon"><i class="fas fa-rocket"></i></div>
+                <div class="step-content">
+                    <h3>3. Deployment & Scaling</h3>
+                    <p>Seamless integration into your tech stack, followed by continuous optimization for maximum
+                        leverage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services" id="services">
+        <h2 class="section-title fade-in">Core Capabilities</h2>
+        <div class="bento-grid">
+            <div class="bento-item fade-in">
+                <div class="bento-front">
+                    <i class="fas fa-robot"></i>
+                    <h3>Intelligent Chatbots</h3>
+                </div>
+                <div class="bento-back">
+                    <p>Context-aware agents that handle customer support, lead qualification, and internal queries 24/7.
+                    </p>
+                </div>
+            </div>
+            <div class="bento-item fade-in">
+                <div class="bento-front">
+                    <i class="fas fa-database"></i>
+                    <h3>Data Pipeline Automation</h3>
+                </div>
+                <div class="bento-back">
+                    <p>Automated extraction, transformation, and loading (ETL) of data across disparate systems.</p>
+                </div>
+            </div>
+            <div class="bento-item fade-in">
+                <div class="bento-front">
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Predictive Analytics</h3>
+                </div>
+                <div class="bento-back">
+                    <p>Machine learning models that forecast trends, optimize inventory, and identify market
+                        opportunities.</p>
+                </div>
+            </div>
+            <div class="bento-item fade-in">
+                <div class="bento-front">
+                    <i class="fas fa-file-invoice"></i>
+                    <h3>Workflow Orchestration</h3>
+                </div>
+                <div class="bento-back">
+                    <p>Connecting SaaS tools to automate repetitive tasks like invoicing, onboarding, and reporting.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="calculator" id="calculator">
+        <h2 class="section-title fade-in">Measure Your Impact</h2>
+        <div class="calc-container fade-in">
+            <div class="calc-input">
+                <label for="hours-slider">Manual Hours Spent Weekly</label>
+                <input type="range" id="hours-slider" min="10" max="200" value="50" class="slider">
+                <div class="slider-value"><span id="hours-display">50</span> Hours</div>
+            </div>
+            <div class="calc-results">
+                <div class="result-box">
+                    <h4>Time Saved</h4>
+                    <div class="result-value"><span id="time-saved">35</span> hrs/week</div>
+                </div>
+                <div class="result-box accent">
+                    <h4>Estimated Annual Savings</h4>
+                    <div class="result-value">$<span id="cost-saved">91,000</span></div>
+                </div>
+            </div>
+            <p class="calc-note">*Based on an average administrative rate of $50/hr and a 70% automation efficiency
+                factor.</p>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content fade-in">
+            <div class="footer-info">
+                <div class="logo">Aura <span>AI</span></div>
+                <p>Engineering operational excellence through artificial intelligence.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-form">
+                <h3>Initiate Sequence</h3>
+                <form id="contactForm">
+                    <div class="input-group">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <textarea placeholder="How can we optimize your operations?" rows="3" required></textarea>
+                    <button type="submit" class="btn btn-primary submit-btn">Transmit Message</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            &copy; 2026 Aura AI Automation. All systems operational.
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
